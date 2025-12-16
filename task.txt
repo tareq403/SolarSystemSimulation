@@ -1,0 +1,33 @@
+I want to create a website that will demonstrate the animation of the Solar system. I want the following criteria to be met:
+
+- The relative rotational velocity of the planets and the relative distance from the Sun needs to be maintained in the visualization. For example, Mercury completes its rotation around the Sun in 88 days, Venus in 225 days and the Earth in 365.25 days. Their revolution around the Sun should represent the relative velocity. (Same for other planets as well). Similar representation of the relative distance from the Sun should be maintained.
+
+- Size of the planets does not needed to be exactly in scale, but bigger and smaller planets should be maintained visually.
+
+- At the beginning, the Sun and the planets will be visible. If the user clicks on a planet, a smooth transition should happen to zoom on the planet and the planets moons should be visible, revolving around the planet. Their relative rotational speed should be representitive. Moon's size and distance from the planet should not need to be in scale. User can zoom out to go back to the Solar system view with a smooth transition.
+
+- There should be controls (both buttons and mouse scrolls) to zoom in and out
+
+- There should be buttons to speed up and down for the animation. A message should be visible "1 second = X days"
+
+- There should be indication of the distance from the Sun for each planet's orbit when in Solar system view, and from the planet to the Moons in the planetary system view. There should be control to change the unit of distance between: light minute, AU, million km, and million miles.
+
+- You can look up online / sources for the distance and rotational time of the planets.
+
+- You can use actual image of the planets and the moons available online. If not found for an entity, use proper color and shading for the planet or moon to best represent it based on the known information of it - for example, saturn with rings, Jupiter with different coloured patches, Earth with blue water with green lands, etc.
+
+- Include all 8 planets of the Solar system, but you can skip non-major moons to keep it simple. Include the following moons:
+  * Earth: Moon
+  * Mars: Phobos, Deimos
+  * Jupiter: Io, Europa, Ganymede, Callisto
+  * Saturn: Titan, Rhea, Iapetus, Dione, Tethys, Enceladus, Mimas
+  * Uranus: Titania, Oberon, Umbriel, Ariel, Miranda
+  * Neptune: Triton, Nereid, Proteus
+
+- My goal is to keep the visuals as realistic and attractive as possible but at the same time simple (possibly with Canvas2D). The view should be from top down of the solar system, so that Sun and all the planet moving on nearly circular orbits are visible from the top. When zoomed into planetary system, the view should be top down as well, showing planet at the centre and moons revolving in nearly circular orbits.
+
+- There should be a control (toggle) to turn labels on and off. When labels are on, all entities (Sun, planets, and moons) should have labels showing their name.
+
+- Start at a zoom level, where the entire solar system is visible within the screen. User can zoom in and out by mouse scroll, by up and down arrow. User can zoom in at any particular point by double clicking. The point double clicked will be the centre for the zoom. User can zoom our by clicking ESC key. User should be able to drag through mouse to move left right top down of the panel when zoomed in and the Solar system is larger than the screen size.
+
+- Use best programming practice to organize the file / directory structure and try avoiding creating large code file by logically splitting codes into organized multiple files. Bonus point for following OOP best practices.

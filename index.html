@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Visualization</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/controls.css">
+</head>
+<body>
+    <div id="app">
+        <canvas id="solarSystemCanvas"></canvas>
+
+        <div id="controls">
+            <div class="control-group">
+                <label>Animation Speed:</label>
+                <button id="speedDown" title="Slow down">−</button>
+                <button id="speedUp" title="Speed up">+</button>
+            </div>
+
+            <div class="control-group">
+                <label>Zoom:</label>
+                <button id="zoomIn" title="Zoom in">+</button>
+                <button id="zoomOut" title="Zoom out">−</button>
+            </div>
+
+            <div class="control-group">
+                <label>Distance Units:</label>
+                <select id="unitSelector">
+                    <option value="AU">AU</option>
+                    <option value="LIGHT_MINUTE">Light Minutes</option>
+                    <option value="MILLION_KM">Million km</option>
+                    <option value="MILLION_MILES">Million miles</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label>
+                    <input type="checkbox" id="labelToggle" checked>
+                    Show Labels
+                </label>
+            </div>
+        </div>
+
+        <div id="timeDisplay">1 second = 1 day</div>
+
+        <div id="instructions">
+            <h3>Controls</h3>
+            <ul>
+                <li><strong>Click planet</strong> to zoom into its moon system</li>
+                <li><strong>Mouse scroll</strong> to zoom in/out</li>
+                <li><strong>Drag</strong> to pan when zoomed in</li>
+                <li><strong>Double-click</strong> to center zoom at point</li>
+                <li><strong>ESC</strong> to zoom out / return to solar view</li>
+                <li><strong>↑↓ arrows</strong> to zoom in/out</li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
