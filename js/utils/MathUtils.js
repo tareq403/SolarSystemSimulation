@@ -20,7 +20,7 @@ export class MathUtils {
         // Map actual distances to evenly distributed visual orbits
         // First moon starts close to planet, others are well-spaced
 
-        const minVisualRadius = 50;  // First moon starts at 50px from planet
+        const minVisualRadius = 70;  // First moon starts at 70px from planet (to avoid overlap with enlarged planet)
         const maxVisualRadius = 300; // Last moon at 300px
         const visualRange = maxVisualRadius - minVisualRadius;
 
